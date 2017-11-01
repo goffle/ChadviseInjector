@@ -1,6 +1,7 @@
 // this is the code which will be injected into a given page...
-(function () {
+(function (document) {
 	const url = "https://chadvisechatbox-dot-artemis-6031a.appspot.com/?apikey=-Kw-WxphgxRb4uBSgM-_";
+	debugger;
 	var wrapper = document.createElement("div");
 	wrapper.innerHTML = '<iframe id="chadvise-id" src=' + url + ' style="visibility: hidden;pointer-events: all;width: 800px;height: 550px;border: 0;position: fixed;z-index: 999;bottom: 0;right: 0;background-color: transparent;border: 1;"/>';
 	document.body.appendChild(wrapper);
@@ -13,4 +14,4 @@
 			}, 3000);
 		}, 5000);
 	};
-})();
+})(document);
